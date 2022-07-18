@@ -1,10 +1,16 @@
 import React from "react";
-// import * as Tone from 'tone'
+import * as Tone from 'tone'
+import SynthImage from "../presentation/SynthImage";
 
-const TonePlayer = () => {
+function TonePlayer() {
+  const handleClick = () => {
+    const synth = new Tone.Synth().toDestination();
+    synth.triggerAttackRelease("C4", "8n")
+}
+    
     return (
         <div className="TonePlayer">
-            
+            <SynthImage handleClick={handleClick}/>
         </div>
     )
 }

@@ -1,10 +1,11 @@
 import React from "react";
 import Keys from "./Keys";
 
-function SynthImage() {
+function SynthImage({handleClick}) {
+
     return  (
         <div>
-         <Keys/>
+         <Keys handleClick={handleClick}/>
         </div>
       );
    
