@@ -1,6 +1,7 @@
 import * as React from "react"
+import '../../style.css'
 
-function Keys({handleClick}) {
+function Keys({mouseClick, mouseOut, mouseOverClick, mouseUp}) {
   return (
     <div className="Keys">
       <svg
@@ -16,48 +17,72 @@ function Keys({handleClick}) {
         </g>
         <g>
           <image
-            id="Eb4"
-            onClick={handleClick}
+            className="mask"
+            id="Eb4"onM
+            onMouseDown={(e) => mouseClick(e)}
+            onMouseUp={(e) => mouseUp(e)}
+            onMouseOut={(e) => mouseOut(e)}
+            onMouseOver={(e) => mouseOverClick(e)}
             transform="translate(399 14)"
             xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAC1CAYAAAAzz41DAAAACXBIWXMAAAsSAAALEgHS3X78AAABHElEQVR4Xu3OsUoDUQBE0cdqtSKuYEJAtJH8/x+JYBmtDYLELu1yqqS4B6ab4o79/u00xriqbTa707Td7sa1mee7MZ3+ftd+FzGtHS6lMFWYKkwVpgpThanCVGGqMFWYKkwVpgpThanCVGGqMFWYKkwVpgpThanCVGGqMFWYKkwVpgpThanCVGGqMFWYKkwVpgpThanCVGGqMFWYKkwVpgpThanCVGGqMFWYKkwVpgpThanCVGGqMFWYKkwVpgpThanCVGGqMFWYKkwVpgpThanCVGGqMFWYKkwVpgpThanCVGGqMFWYKkwVpgpThanCVGHq9vXlebx/fI7l4X7tO6bpZhy+DuNw+F67ns3zPJblae12djz+jOVxO/4B1SE3bFsRrHkAAAAASUVORK5CYII="
           ></image>
         </g>
         <g>
           <image
-            id="Db4"
-            onClick={handleClick}
+            className="mask"
+            id="Db4"onM
+            onMouseDown={(e) => mouseClick(e)}
+            onMouseUp={(e) => mouseUp(e)}
+            onMouseOut={(e) => mouseOut(e)}
+            onMouseOver={(e) => mouseOverClick(e)}
             transform="translate(342 13)"
             xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAC2CAYAAACrks9eAAAACXBIWXMAAAsSAAALEgHS3X78AAABRklEQVR4Xu3OsUrDABRG4T+lBE0oQsFXqKOuvoBOTnlo6WMUH0AsZLCQXIeCa4YzNMP54MId/uE0VZUkaZrm+qzMdmlwK88vr3l/+0iOx8/quq6SrOqGYaiqyia/36maszbjWEmSzcLu5gykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAykDKQMpAyktnddn6fDIefzT9q2XdpnmuecTl+5XC5L03/7/WP6/j7TtLS8GsdzdruHJMkfY/VNTHLWerQAAAAASUVORK5CYII="
           ></image>
         </g>
         <g>
           <image
-            id="Bb3"
-            onClick={handleClick}
+            className="mask"
+            id="Bb3"onM
+            onMouseDown={(e) => mouseClick(e)}
+            onMouseUp={(e) => mouseUp(e)}
+            onMouseOut={(e) => mouseOut(e)}
+            onMouseOver={(e) => mouseOverClick(e)}
             transform="translate(223 14)"
             xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAC1CAYAAAAzz41DAAAACXBIWXMAAAsSAAALEgHS3X78AAABLUlEQVR4Xu3OMWoCUQBF0fe/It9CphBmIbHLOlyAW09wByEqymes0urcJkxxb/0enJJkyoIqpeR4PKW+G/53pZR8HD6XB0uSy+/PMmFJhOGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhM1tmqb03rMexzHDsMuqvjbWusrtds3X9zm995fbv2qt2e/HtLbJnMvjcU9rm7S2zRO4wRtbavOH3wAAAABJRU5ErkJggg=="
           ></image>
         </g>
         <g>
           <image
-            id="Ab3"
-            onClick={handleClick}
+            className="mask"
+            id="Ab3"onM
+            onMouseDown={(e) => mouseClick(e)}
+            onMouseUp={(e) => mouseUp(e)}
+            onMouseOut={(e) => mouseOut(e)}
+            onMouseOver={(e) => mouseOverClick(e)}
             transform="translate(159 14)"
             xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAC1CAYAAAAzz41DAAAACXBIWXMAAAsSAAALEgHS3X78AAABIUlEQVR4Xu3OvS5EARhF0S/XTzHFDMI0gqeQiPd/mglaEmR02ptdUayVnO4Ue56fHo8z86+22WyOy/3d7fw3Z2fns6yd/oqwSlglrBJWCauEVcIqYZWwSlglrBJWCauEVcIqYZWwSlglrBJWCauEVcIqYZWwSlglrBJWCauEVcIqYZWwSlglrBJWCauEVcIqYZWwSlglrBJWCauEVcIqYZWwSlglrBJWCauEVcIqYZWwSlglrBJWCauEVcIqYZWwSlglrBJWCauEVcIqYZWwSlglrBJWCauEVcIqYZWwSlglrBJWCauEVcIqYdXy+fW19vkTpw93t7Pf7+fqcrf2nZmZZTmZl9e3ORwOa9dfu93FbLfb+f5ee858fLzPzc31/AAaDTcx08S/vAAAAABJRU5ErkJggg=="
           ></image>
         </g>
         <g>
           <image
-            id="Gb3"
-            onClick={handleClick}
+            className="mask"
+            id="Gb3"onM
+            onMouseDown={(e) => mouseClick(e)}
+            onMouseUp={(e) => mouseUp(e)}
+            onMouseOut={(e) => mouseOut(e)}
+            onMouseOver={(e) => mouseOverClick(e)}
             transform="translate(101 14)"
             xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAC1CAYAAADcDeZ9AAAACXBIWXMAAAsSAAALEgHS3X78AAABRUlEQVR4Xu3QMU4CYRRF4evvNDIxJARmCyYm9nQWFib0LMCaNbBeWIAIMpLfztIhp9Apzpe87hYnL6vXl5pkVNc0TV2v32p5eHzK2JRSslw+p9T+Y2j752qtORzeU4aG/2W73dyMNi7JeD+XGMcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHGUcZRxlHNfPFPF3XZTq9z225rvXz/JX9fpfj8TQ0/TGbLdK2d7lcft/1/TmTSZsk+Qb0c0Qx4io1VwAAAABJRU5ErkJggg=="
           ></image>
         </g>
         <g>
           <image
-            id="Eb3"
-            onClick={handleClick}
+            className="mask"
+            id="Eb3"onM
+            onMouseDown={(e) => mouseClick(e)}
+            onMouseUp={(e) => mouseUp(e)}
+            onMouseOut={(e) => mouseOut(e)}
+            onMouseOver={(e) => mouseOverClick(e)}
             transform="translate(1 15)"
             xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAACzCAYAAADoiB4ZAAAACXBIWXMAAAsSAAALEgHS3X78AAAAgElEQVR4Xu3OsREAIBDDsMDvP3MYgYqjkWsXWkmaT81M9m16HQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBXQNsceiUFaz/TvpYAAAAASUVORK5CYII="
           ></image>
@@ -65,7 +90,11 @@ function Keys({handleClick}) {
         <g>
           <image
             id="E4"
-            onClick={handleClick}
+            className="mask"
+            onMouseDown={(e) => mouseClick(e)}
+            onMouseUp={(e) => mouseUp(e)}
+            onMouseOut={(e) => mouseOut(e)}
+            onMouseOver={(e) => mouseOverClick(e)}
             transform="translate(423 15)"
             xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAEbCAYAAAClebadAAAACXBIWXMAAAsSAAALEgHS3X78AAADKElEQVR4Xu3cMW8bZQDG8cd3bxI7LnWIoyihJVLUIEAdK0VUClDUgX6BslWK1LlfoQMjA0ulLl06tiPq0I1vwBcBhKA2sX1373sMUcuApYsj359aen6LBz+2/3f23ehOXdda1O7u/u373z180t3oXYmxmMzbpJRilmXXb97c3xkOur/Eqirn7RaRh7A2ejP689nzl09C03iezc3+4Ouvvr21MxzqbDK3W2WZNLja18nJodY3usdSnLtbTNDvv/2qH358+v2lwiVpPP5LIeSazaZzn58VUYMPktbTG6kYSWnxb/Y/un11yj+UUkxZ0/bSaml9PZfyTtPyUtoLb6f3nfbCW+ZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpDqc5nOZwmsNpKxse+v3+0dbWzrWm4VvT6WT88cHRoSTVdd00b004Pr7z4PT00eOimF04JISgbrensiyapq0JkrS395Gm04lSSk17SVJKSYscaBuCJJ2d/a2imF04/H2wshfnyoYH6d+7w1J/sst8rzmCpM+rKqqsomJc3qfNiqiqau+aCcNhb/uLW3sqy1gXVWzaX1hVJm1/2Oucn/nlnZC3wvbW5s8HN67flWYdpappv5hUSy2d9VCnlKQolZUUl3fG27aydxWH0xxOczjN4TSH0xxOczjN4TSH0xxOczjN4TSH0xxOczjN4TSH0xxOczjN4TSH0xxOczjN4TSH0xxOczjN4TSH0xxOczjN4TSH0xxOczjN4TSH0xxOczjN4TSH0xxOczjN4bSVDQ/nD7mUr8Ix5Mry8+TQybJM6klZR8re9/+e6KnK1pRledb57NNPbt/95st7Mcay6WX/tzzP10bjyeinV69f/AOQXq1LwttQ8AAAAABJRU5ErkJggg=="
           ></image>
@@ -73,7 +102,11 @@ function Keys({handleClick}) {
         <g>
           <image
             id="D4"
-            onClick={handleClick}
+            className="mask"
+            onMouseDown={(e) => mouseClick(e)}
+            onMouseUp={(e) => mouseUp(e)}
+            onMouseOut={(e) => mouseOut(e)}
+            onMouseOver={(e) => mouseOverClick(e)}
             transform="translate(367 14)"
             xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAEcCAYAAABTSz0mAAAACXBIWXMAAAsSAAALEgHS3X78AAADgElEQVR4Xu3dz2scZRzH8c/8yM7GZBNDaVqtBm2T2EBbWhEpJSAiNlAQDx4Fr576H/QkePLmP+C/ofecRPEgbe/9Ayz51Z3ZnXkeD631sJtMku6+Q+Dzuj7fZ/a9szPLnnaSGKNO6vade7e27n/1S1WVzw+bGdZN/c5y7/ZHqxf+HLee5flMv6z2vv3u+2/GrR8lbxsYZ/Xau59u3f/64xf9/qEzg0GtmzeX49raBw+kZsxErkHV1+bm5sr29vazMQOHOlX0wUGs9/b3VJZ9hRBG1mOMapqotFmU9I9U1qMH6XYVq13FZjC61iJtGziNEKI6nVxLb88mCie//NpMJzpKRSdV0cmkU9wzbaYSPW2Opjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4miKoymOpjia4mjKqZ7s3ustXg0hKL7Js8TjyyfCr7x/ZUPSs43r6zNHb5DSNMseP3laJg8fPvr17t3Pt/b3d9v2vFYUXRVFcWj0sA5amO/oy8+uam6xkIajj6xXkkgx6vnOnkI9HF0fM39haUk//vTzD3mvt/jh5UuXtTM727btteGwVtMc44WO8uoNL11cltJMUtunlkia01vzCwt5XQ/3X/T7Kst+y6YpGRzzdZNEKgrFujqfN6KjKecyOq/rUA8GtapB0zZ7bKGJqgZjvuYmIE2SNH/vyvzG+urFsLszM7Gz3oSgudkiZFmSagrt+fXVS3/fuLVyT8P5ttmTStVEqZl8dR7Dq8ti8seemv9/e7zJ7wjYxK5jkqMpjqY4muJoiqMpjqY4muJoiqMpjqY4muJoiqMpjqY4muJoiqMpjqY4muJoiqMpjqY4muJoiqMpjqY4muJoiqMpjqY4muJoiqMpjqY4muJoiqMpjqY4muJoiqMpjqY4mnIuo/MkzSRlUpa1zZ6tJNF/5zhX3pWUSDPH/8+as/EyOmadkDzY+uKT9bVrd8qqOmjbdta6RTH3+x9//fYvtD++PHi2jjgAAAAASUVORK5CYII="
           ></image>
@@ -81,7 +114,11 @@ function Keys({handleClick}) {
         <g>
           <image
             id="C4"
-            onClick={handleClick}
+            className="mask"
+            onMouseDown={(e) => mouseClick(e)}
+            onMouseUp={(e) => mouseUp(e)}
+            onMouseOut={(e) => mouseOut(e)}
+            onMouseOver={(e) => mouseOverClick(e)}
             transform="translate(310 14)"
             xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAEcCAYAAAC4fIYlAAAACXBIWXMAAAsSAAALEgHS3X78AAACi0lEQVR4Xu3cz4tNcRyH8ff5cc/MXJOmpiaDkaI0lBkralZ2yk6ytba0JXZ2/hCWSrKwVHZSdvIHSE0Yydy5955rMUpJTornuvW81u9PPX3rbE+xuXF2686tm/eTZDwaDQNaXFw8+PLV6xe379670bX9Wb26unrkyrXrF5Iiyahr/5fVWT50fCXJn4dP2mEy3E6qMtlDHzyZX0oGH7pWv1R2Df5XhtMMpxlOM5xmOM1wmuE0w2mG0wynGU4znGY4zXCa4TTDaYbTDKcZTjOcZjjNcJrhNMNphtMMpxlOM5xmOM1wmuE0w2mG0wynGU4znGY4zXCa4TTDaYbTDKcZTjOcZjjNcJrhNMNphtMMpxlOM5xmOM1wmuE0w2mG0wynGU4znGY4zXCa4TTDaYbTDKcZTjOcZjjNcJrhNMNphtMMpxlOM5xmOM1wmuE0w2mG0wynGU4znGY4zXCa4TTDaXXX4N9qM98/sHBuc2NrZ+fTx6Zp5rouxm07fPPm7evphg8+Z/3UiaVnTx4+z2TStU6/v5B377fbM6fXz083vJ2k1zRZPny0a/ldPyuTumyaZm664UWStk12v3Qt98232RvuZjRuhzP7cRpOM5w2c+FVUaSuyt6MhU/S69WZa+pmxsJ/MJxmOM1wmuE0w2mG0wynGU4znGY4zXCa4TTDaYbTDKcZTjOcZjjNcJrhNMNphtMMpxlOM5xmOM1wmuE0w2mG0wynGU4znGY4zXCa4TTDaYbTDKcZTjOcZjjNcJrhtJkNr8uiKFOVSVknVdu1n7IqRbn/E556UtRtyn6SOulVv7+buoVMmt2kqFOsrR07efnSxatVVdXj8XjUdTpNVVXVg8Hg66PHTx98AyBSVcH9zZ1oAAAAAElFTkSuQmCC"
           ></image>
@@ -89,7 +126,11 @@ function Keys({handleClick}) {
         <g>
           <image
             id="B3"
-            onClick={handleClick}
+            className="mask"
+            onMouseDown={(e) => mouseClick(e)}
+            onMouseUp={(e) => mouseUp(e)}
+            onMouseOut={(e) => mouseOut(e)}
+            onMouseOver={(e) => mouseOverClick(e)}
             transform="translate(247 14)"
             xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAEcCAYAAACI8JcEAAAACXBIWXMAAAsSAAALEgHS3X78AAAEKElEQVR4Xu3cv2tkVRjG8ec998zOBEdX2DCwLEgCCUFYLNzKbKFiZWO52An+KysIWlta7H9jIzZ2dluL4CSZX/ee97U4k8SVxJuESfKwPB8IZCZv7sz3njNTHosIXNeLF9/u7e7uf7dcLl5fNtN2Zfl48u7zg71Hv1w2s0nj8fjJl199/U3uG7zIx88Ofz/85NPhdDq9dKZtHU+fbnf7+zufA+XSuc3JePXq599uFDQ7Ofp1Ov378Ojo4qCIgHtgmN7PwF/AortwbqNGj4B2htQ3dxMeQM4Ntoa5PrhDtxIEANY3cEtuLei+KIidgtgpiJ2C2CmInYLYKYidgtgpiJ2C2CmInYLYKYidgtgpiJ2C2CmInYLYKYidgtgpiJ2C2CmInYLYKYidgtgpiJ2C2CmInYLYKYidgtgpiJ2C2CmInYLYKYidgtgpiJ2C2CmInYLYKYidgtgpiJ2C2CmInYLYKYidgtgpiJ2C2CmInYLYKYidgtgpiJ2C2CmInYLYKYidgtgpiJ2C2CmInYLYKYidgtgpiJ2C2CmInYLYKYidgtgpiJ2C2CmInYLYKYidgtgpiJ2C2CmInYLYKYidgtgpCABKKQvA+sbuxY2CRqOtD0rp+sbuRX758qc/dnYO9ubz477ZM7u7B5jPZ31j9yJvb0/2JpMJZrN3+mbPrFZLlFJgxrft8nw+w2Ixx2Ix75t9A2MMcMPPEDMFscurtl12XTdctd43e2Wlc8Qg+sZuRX743sPh48kWpseb+5C7B1IyNDkBcbdh+bPnT9oPPzoYlJNp3+y1NSkBG1z5q8g52QLIg+ZB7pu9PnfgbhcIOSIAOFDu9k7elrfuW05B7BTETkHsFMROQewUxE5B7BTETkHsFMROQewUxE5B7BTETkHsFMROQewUxE5B7BTETkHsFMROQewUxE5B7BTETkHsFMROQewUxE5B7BTETkHsFMROQewUxE5B7BTETkHsFMROQewUxC4DwHL6J3LTIKVEeCqZoW1XaLsOBoOZISKQUgIMSGbwCKyOXgNYB4UH3AJmp4fwGJi6LCU8GAyQUoK7nx3mlJKdPee5HuOTAcDdYVYj6ioBmzyDMf5znNR1d0EyQ6C+NwBvREUEIs7PQ6pB4UD51wXW/3jdF76Iu8NSAyAQHrBkAAwRfrXrm8E9AMQ6JOAeCATgNdTdUUoNyADQtQWWHIFARIOmWe/R9darq3eFF0e9Y2Z1GwDr34sjom6J0hXkJiM1DSL8/PPwP9wdbdeiSc3Z44iAR12piEDXOdA0Najt2rM37BZwT0jJYFa332AwQN2CFx90FTjfoB6BKB1gQNcVjEZb6FZzDEej+vdVYL5YYDweo5RY34B6ldP3UJ87vaKhbVscn5ygWX9x1VWqN+h0tSIMuWm28OMP339R9+Hb8fMPa5riJH2UeD0AAAAASUVORK5CYII="
           ></image>
@@ -97,7 +138,11 @@ function Keys({handleClick}) {
         <g>
           <image
             id="A3"
-            onClick={handleClick}
+            className="mask"
+            onMouseDown={(e) => mouseClick(e)}
+            onMouseUp={(e) => mouseUp(e)}
+            onMouseOut={(e) => mouseOut(e)}
+            onMouseOver={(e) => mouseOverClick(e)}
             transform="translate(184 14)"
             xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAEcCAYAAABqLIx9AAAACXBIWXMAAAsSAAALEgHS3X78AAADk0lEQVR4Xu3cP28bdQDG8ed3d3YS2zhOm5hQUamQthJVVSYWRphYUJdWDF0KEhJSBzYEzIWhLwEJ8QJYeCVF7F2YmJCK6zv7Lnc/hqSiFOKzrbT6Nno+0m2P/3zP8p0nhxijVtHv98/fvv3pD+PxhWvz+WyyaFsd1vW5UW9849r450W75w0GgwsfffzJnbbd88KqMaPRzsUHD376/eDtK8qLYuG2LA919fJec/3GpURqFm7/kUhK9O03X1++/933j9rWz8raBv9nOp1o8mSiPJ+euIlRKqtaaTKQmj+lsj5x+y9JkLrbinXetvyPpG2wvqg0CepmaWhbnpYXGPPyOYbKMVSOoXIMlWOoHEPlGCrHUDmGyjFUjqFyDJVjqBxD5Rgqx1A5hsoxVI6hcgyVY6gcQ+UYKsdQOYbKMVSOoXIMlWOoHEPlGCrHUDmGyjFUjqFyDJVjqBxD5Rgqx1A5hsoxVI6hcgyVY6gcQ+UYKsdQOYbKMVSOoXIMlWOoHEPlGCrHUDmGyjFUjqFyDJVjqBxD5Rgqx1A5hsoxVI6hcgyVY6gcQ+UYKsdQOYbKMVSOoXIMlWOoHEPlGCrHUDmGyjFUjqFyDJVjqBxD5RgqYExoG5woG412Lg6Hw/N13TaVZrPiyf7+G5c2NjbUNE3bfD0xSmo03t19V9Kjtvmzwq1bd3+8efPO3el0ohhj214hBPV6A6VpsnAfY1RdR73/3pvx4OpuULnE2XoqBBV5rjwv2paSpOH2UA8f/vZr1u/3R/uv7+vxX1ttj5F09CbLcr5U+NqaqK3hUFs7e5KWeZ2B9sZ/XM/K8rDMi0Lz+ezFvsFVBElVdXQsYzNVVc4L4AVgfY6hyiSpqhpVVa3mFL8yMUY19fETJuvfO5ZVRxVZt5t1t4d9pcmsbb+S5vjMdDppONWzdII0aCu7cnDunQ8+fEuzx9tt+7V0skSqVrjHrCmEoGyzm34ldX7ZHHSXu6Svqol6GZ+MJGUxNkcX88N4/FPi1XWmrmaOoXIMlWOoHEPlGCrHUDmGyjFUjqFyDJVjqBxD5Rgqx1A5hsoxVI6hcgyVY6gcQ+UYKsdQOYbKMVSOoXIMlWOoHEPlGCrHUDmGyjFUjqFyDJVjqBxD5Rgqx1A5hsoxVI6hcgxNnk8lnZGYXq8v6YzEPOUYqiSEpCMlUpq2bfGSkG1ISqRsuf8ERIsx6st7n78WY9SrfNz74rPsb9r0Tzq0zCyeAAAAAElFTkSuQmCC"
           ></image>
@@ -105,7 +150,11 @@ function Keys({handleClick}) {
         <g>
           <image
             id="G3"
-            onClick={handleClick}
+            className="mask"
+            onMouseDown={(e) => mouseClick(e)}
+            onMouseUp={(e) => mouseUp(e)}
+            onMouseOut={(e) => mouseOut(e)}
+            onMouseOver={(e) => mouseOverClick(e)}
             transform="translate(127 14)"
             xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAEcCAYAAAC4fIYlAAAACXBIWXMAAAsSAAALEgHS3X78AAADVUlEQVR4Xu3cP28TdwDG8edn/4IdJ0I44U8oou2AaFWFMEAZ2oEB3gAdECxVN5YixAJbR5hIpXaoOnaqxNJX0LFL3wC8ByQgjt3cnX33YwigqsrlbBS+JOrzmSzdc9LXvvONF1JKmtX9+w+/zfPs77rj40m5uXSkd2/ti+NH6jbtGDuS9M31727UbXYTZg1fX/8tXbz4lQaDQe2mKCY6e+ZYtrr2aVeqalZRknTz+rXjvz/+41nNqFZsGvzXaDT8c2Pj5ZXhcLN2kxelUtmTqudSUe48ilGK7Z2PTaHVNNivHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3hNIfTHE5zOM3htP9PeFVVAyk0zZoFSSlpPJmMmqY7mTm8052/WlVl06xZkpSSPjl96sum6U7CnTs/fH7p0uUnw+GgaStJ6vUWFWNbKaXaTV6UurC2kp07f7KrYpcvGYJGw5GyLKvf/FsIWu739einX27Hfv/og5UTK9qYn286TZJUFLnKslQIe3C7pKSFfl8LrTltX4ImQdKCeoeXlmJR5E//2dpSlm01nfXWnkS/UeSS8qbVthCkTkcab81+j+8XBzY8Tibjp0UxUZ7vwZPitbwoNR7vxTOzXlw50fv+7Jlj2YsX7W7TeFrjcamjy92Oqmn+cO8mrn720ebq2sddFYtN29kkSZOqafXODu49/vbTe7ys78OB/cUdTnM4zeE0h9McTnM4zeE0h9McTnM4zeE0h9McTnM4zeE0h9McTnM4zeE0h9McTnM4zeE0h9McTnM4zeE0h9McTnM4zeE0h9McTnM4zeE0h9McTnM4zeE0h9McTnM4zeE0h9MObPjrVzi0pHZ79+V+EIKkllJoK8ZDvY7Ukuame4fQh7UdHuIhhZSS7t6+9XWW59O9tukD63Y6h3/8+de/XgFOjKUUADLFqwAAAABJRU5ErkJggg=="
           ></image>
@@ -113,7 +162,11 @@ function Keys({handleClick}) {
         <g>
           <image
             id="F3"
-            onClick={handleClick}
+            className="mask"
+            onMouseDown={(e) => mouseClick(e)}
+            onMouseUp={(e) => mouseUp(e)}
+            onMouseOut={(e) => mouseOut(e)}
+            onMouseOver={(e) => mouseOverClick(e)}
             transform="translate(70 14)"
             xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAEcCAYAAAC4fIYlAAAACXBIWXMAAAsSAAALEgHS3X78AAACsUlEQVR4Xu3cTYtNcQDH8d95uJcaQo2JpuQpKYmyMGU8JAuiWbOhlFA2XomVshEr70AoNlYWs7Ihr8GUMlf3ujgW10rMGU/f69b3U2f3O/Xt3z13+S+uXbl0ceHc6evLy8vvAqnqurO225m6fefezYePn75o2/9IPXfk6NkzC+fnkk9t27+oTFLm6fPFQ0l+L/xz//3n5FMyWEqatvlfUpZJd12a4YcvbdOfKdsG/yvDaYbTDKcZTjOcZjjNcJrhNMNphtMMpxlOM5xmOM1wmuE0w2mG0wynGU4znGY4zXCa4TTDaYbTDKcZTjOcZjjNcJrhNMNphtMMpxlOM5xmOM1wmuE0w2mG0wynGU4znGY4zXCa4TTDaYbTDKcZTjOcZjjNcJrhNMNphtMMpxlOM5xmOM1wmuE0w2mG0wynGU4znGY4zXCa4TTDaYbTDKcZTjOcZjjNcJrhNMNphtMMpxlOM5xmOM1wmuG/rmkbrKhuG/w7TaY3T88myZ49uztVWXbb3kiSV6/f9JKkuHvn1oPLV29cyGDpTw/h1xRFesu99Pv9tuVIUaRTd7L48u3Lk6cOHxjfiTdNpjZuyFQ1k9WdWJGkzsxMsS0Z608lyXA4elajKJJuJx/7vX4y1o/zzxhO6Q+GvWSiwpukabJ1dv32+fn5XZMT3oyeHTs3V1tmNm2fnPDvTF54M/rPn7zwbwynGU4znGY4zXCa4TTDaYbTDKcZTjOcZjjNcJrhNMNphtMMpxlOM5xmOM1wmuE0w2mG0wynGU4znGY4zXCa4TTDaYbTDKcZTjOcZjjNcJrhNMNphtMMpxlOM5xmOG1iw7/daFMlVZk0xcrrcauqjK7kSeqq262SIqmnsrq7fMapTlIl5ZoUJ44f23dw/95j/cGg1/bauFVV1UmSR0+e3f8KaahaqRuY11sAAAAASUVORK5CYII="
           ></image>
@@ -121,7 +174,11 @@ function Keys({handleClick}) {
         <g>
           <image
             id="E3"
-            onClick={handleClick}
+            className="mask"
+            onMouseDown={(e) => mouseClick(e)}
+            onMouseUp={(e) => mouseUp(e)}
+            onMouseOut={(e) => mouseOut(e)}
+            onMouseOver={(e) => mouseOverClick(e)}
             transform="translate(11 14)"
             xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAEcCAYAAACBGzd+AAAACXBIWXMAAAsSAAALEgHS3X78AAADDElEQVR4Xu3cP2sTcQDG8ef+JGlq09bGYrESrSiCgoMu2g4ujoq4dHNxdfUdCI71DQjiVlBQBDffgu/AF+Da0Ca5JPc7hyDYob3aJP0aeD7TcTxc8uXu1ouKotA0bG+/eLKxceNllvV+/X0+hNCv1+cf3bm9crk+V/uRD4eDo65xlCRNK5L0+s3bV2nZ+LTu3tv8tPngYbXdbh86PxgENZvL2tq6piSJ7kvhiCscZ/S3373fXZ9aQLez/3Nvb+/W/v7hgKyfa6kRlAwWpTySwimegGpFCoWiYhjHZduJK6Q4jqQoKlueyNkHTJgDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYA2tYCiKAZRVLYa39QCKpXq+TzPy2ZjSyVpZ+dD0WxeVJb1yvYntrFxU91up2w2tlSSlpebWlu7pE7noGx/Yv1+pjzPFU35OUolKcu66nQO1Ot1y/b/ZNp/XpriO3BWZj4g/XMQQlAIxXHbiZj0b8z+HWi1rlz/8vljaLWuxtlBu2w/tjwvtHCuKhWTuRNpJY1q6+uL8YXVJWk1KdtPRh6kQZAm0DB6B7KhpIHUGx6//g/N/DvgAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYDmAJoDaA6gOYA28wGjT5MkyegwOaNvq4wrTqQoSJLSQnGIa/OS5qTK9L9KNhk1KcpVRGmIGo3GyrOnj583FuqNPM9n4uswSZKkkvT12/fd32ulitWTKwYSAAAAAElFTkSuQmCC"
           ></image>
